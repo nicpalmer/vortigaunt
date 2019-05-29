@@ -1,0 +1,17 @@
+{
+  "description": "Enrich the threat intel",
+  "processors":[
+    {
+      "grok": {
+        "field": "Hash",
+        "patterns": [
+          "%{GREEDYDATA:hash};%{GREEDYDATA:Info} %{URI:report}%{GREEDYDATA:catchall}",
+          "%{GREEDYDATA:hash};%{GREEDYDATA:Info} %{GREEDYDATA:other}"
+        ]
+      }
+    }
+  ]
+}
+
+
+
