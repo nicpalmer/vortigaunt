@@ -1,0 +1,18 @@
+{
+  "description": "Enrich the threat intel",
+  "processors":[
+    {
+      "grok": {
+        "field": "IP",
+        "patterns": [
+          "%{IPORHOST:IP}:%{NUMBER:Port}", "%{IPORHOST:IP}"
+        ]
+      }
+    },
+    {
+      "geoip" : {
+        "field" : "IP"
+      }
+    }
+    ]
+}
