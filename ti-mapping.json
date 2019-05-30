@@ -1,6 +1,6 @@
 {
   "index_patterns": [
-    "ti-go"
+    "ti-go-*"
   ],
   "settings": {
     "number_of_shards": 3
