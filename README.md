@@ -38,6 +38,8 @@ Vortigaunt is configured with environment variables, as a bare minimum you'll ne
  export VORTIGAUNT_PORT="9200"
  export VORTIGAUNT_HOSTNAME="localhost"
  export VORTIGAUNT_SCHEME="http"
+ export VORTIGAUNT_USERNAME="elastic"
+ export VORTIGAUNT_PASSWORD="changeme"
 
 ./vortigaunt all
 ```
